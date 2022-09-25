@@ -64,3 +64,54 @@ var docDefinition = {
   ]
 }
 ```
+
+You can also set table of contents style and indents using tocStyle and tocMargin
+```js
+var docDefinition = {
+	content: [
+		{
+			toc: {
+				title: {text: 'INDEX'},
+			}
+		},
+		{
+			text: 'Introduction',
+			tocItem: true,
+			tocStyle: {bold: true},
+			pageBreak: 'before'
+		},
+		'Lorem ipsum dolor sit amet...',
+
+		{
+			text: 'Background',
+			tocItem: true,
+			tocMargin: [20, 0, 0, 0],
+			pageBreak: 'before'
+		},
+		'Lorem ipsum dolor sit amet...',
+
+		{
+			text: 'About the project',
+			tocItem: true,
+			tocMargin: [20, 0, 0, 0],
+			pageBreak: 'before'
+		},
+		'Lorem ipsum dolor sit amet...',
+
+		{
+			text: 'About the authors',
+			tocItem: true,
+			tocMargin: [20, 0, 0, 0],
+			pageBreak: 'before'
+		},
+		'Lorem ipsum dolor sit amet...',
+
+		{
+			text: 'Abstract',
+			tocItem: true,
+			tocStyle: {bold: true},
+			pageBreak: 'before'
+		},
+	]
+}
+```
